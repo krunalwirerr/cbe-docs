@@ -113,7 +113,7 @@ body {
 .burger span {
   width: 24px;
   height: 2px;
-  background: #000; /* DEFAULT: black for white header */
+  background: #fff; /* DEFAULT: black for white header */
   transition: 0.3s;
 }
 
@@ -157,6 +157,15 @@ body {
   display: flex;
 }
 
+#mainHeader.scrolled {
+  background: linear-gradient(
+    90deg,
+    rgba(74, 18, 92, 0.85),
+    rgba(43, 10, 50, 0.85)
+  );
+}
+
+
 /* ================= MOBILE FORCE FIX ================= */
 
 @media (max-width: 767px) {
@@ -169,7 +178,7 @@ body {
 
   /* White header on mobile */
   #mainHeader {
-    background: #ffffff;
+    /* background: #ffffff; */
   }
 
   /* Show burger */
@@ -177,7 +186,7 @@ body {
     display: flex !important;
   }
 }
-  
+
 
 
 /* .connect-btn:hover {

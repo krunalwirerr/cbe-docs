@@ -23,8 +23,8 @@
 
       <!-- Logo -->
       <div class="d-flex align-items-center gap-2">
-        <img class="d-block d-md-none" src="./assets/images/Group 1437254512.png" alt="logo" height="36">
-        <img class="d-none d-md-block" src="./assets/images/logo.png" alt="logo" height="36">
+        <!-- <img class="d-block d-md-none" src="./assets/images/Group 1437254512.png" alt="logo" height="36"> -->
+        <img src="./assets/images/logo.png" alt="logo" height="36">
       </div>
 
       <!-- Desktop Nav -->
@@ -371,25 +371,19 @@
   });
 </script>
 
+<script>
+  const header = document.getElementById("mainHeader");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
 
 
-
-    <!-- <script>
-        let lastScroll = 0;
-        const header = document.getElementById("mainHeader");
-
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.pageYOffset;
-
-            if (currentScroll > lastScroll && currentScroll > 100) {
-                header.classList.add("hide-header");
-            } else {
-                header.classList.remove("hide-header");
-            }
-
-            lastScroll = currentScroll;
-        });
-    </script> -->
 </body>
 
 </html>
