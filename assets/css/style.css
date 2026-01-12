@@ -52,11 +52,8 @@ body {
 /* ================= SCROLLED STATE ================= */
 
 #mainHeader.scrolled {
-  background: linear-gradient(
-    90deg,
-    rgba(74, 18, 92, 0.85),
-    rgba(43, 10, 50, 0.85)
-  );
+    background: radial-gradient(circle at top left, #7b2d7d, #3b0a45 70%);
+
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
@@ -128,8 +125,12 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
-  background: #ffffff;
+  width: 100%;  
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  background: radial-gradient(circle at top left, #7b2d7d, #3b0a45 70%);
+  /* background: #ffffff; */
   padding: 20px;
   display: none;
   flex-direction: column;
@@ -139,7 +140,7 @@ body {
 }
 
 .mobile-nav a {
-  color: #000; /* FIXED */
+  color: white; /* FIXED */
   font-size: 14px;
   opacity: 0.85;
 }
