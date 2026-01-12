@@ -35,6 +35,8 @@ body {
   box-sizing: border-box;
 }
 
+/* ================= HEADER ================= */
+
 #mainHeader {
   position: fixed;
   top: 0;
@@ -43,45 +45,31 @@ body {
   z-index: 999;
   padding: 18px 0;
   font-family: "medium";
-
-  /* Start transparent */
   background: transparent;
-
   transition: all 0.4s ease;
 }
 
-/* AFTER SCROLL */
+/* ================= SCROLLED STATE ================= */
+
 #mainHeader.scrolled {
   background: linear-gradient(
     90deg,
     rgba(74, 18, 92, 0.85),
     rgba(43, 10, 50, 0.85)
   );
-
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
-/* Hide on scroll */
-.hide-header {
-  transform: translateY(-100%);
-}
+/* ================= NAV ================= */
 
-/* Logo */
-.logo-text {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-/* Nav Glass */
 .nav-glass {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(12px);
   border-radius: 40px;
   padding: 8px 22px;
+  display: flex;
   gap: 25px;
 }
 
@@ -96,7 +84,8 @@ body {
   opacity: 1;
 }
 
-/* Button */
+/* ================= CONNECT BUTTON ================= */
+
 .connect-btn {
   border: 1px solid #f4d08b;
   color: #f4d08b;
@@ -106,6 +95,90 @@ body {
   font-size: 14px;
   transition: 0.3s;
 }
+
+/* Prevent blue links */
+#mainHeader a {
+  text-decoration: none;
+}
+
+/* ================= BURGER ================= */
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 24px;
+  height: 2px;
+  background: #000; /* DEFAULT: black for white header */
+  transition: 0.3s;
+}
+
+/* Burger turns white when header is scrolled */
+#mainHeader.scrolled .burger span {
+  background: #fff;
+}
+
+/* ================= MOBILE NAV ================= */
+
+.mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  z-index: 998;
+}
+
+.mobile-nav a {
+  color: #000; /* FIXED */
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.mobile-nav a:hover {
+  opacity: 1;
+}
+
+.mobile-nav .connect-btn {
+  color: #7b1e8c;
+  border-color: #7b1e8c;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+/* ================= MOBILE FORCE FIX ================= */
+
+@media (max-width: 767px) {
+
+  /* Hide desktop items */
+  .nav-glass,
+  .connect-btn {
+    display: none !important;
+  }
+
+  /* White header on mobile */
+  #mainHeader {
+    background: #ffffff;
+  }
+
+  /* Show burger */
+  .burger {
+    display: flex !important;
+  }
+}
+  
+
 
 /* .connect-btn:hover {
     background: #f4d08b;
@@ -1053,4 +1126,7 @@ body {
     justify-content: center;
     margin-top: 12px;
   }
+  .footer-bottom p {
+  padding-bottom: 30px;
+}
 }

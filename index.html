@@ -18,32 +18,49 @@
 <body>
 
     <header id="mainHeader">
-        <div class="container-fluid px-5">
-            <div class="d-flex align-items-center justify-content-between">
+  <div class="container-fluid px-5">
+    <div class="d-flex align-items-center justify-content-between">
 
-                <!-- Logo -->
-                <div class="d-flex align-items-center gap-2">
-                    <img src="./assets/images/logo.png" alt="logo" height="36">
-                    <!-- <span class="logo-text">CBE Docs</span> -->
-                </div>
+      <!-- Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <img class="d-block d-md-none" src="./assets/images/Group 1437254512.png" alt="logo" height="36">
+        <img class="d-none d-md-block" src="./assets/images/logo.png" alt="logo" height="36">
+      </div>
 
-                <!-- Nav -->
-                <nav class="nav-glass d-none d-md-flex">
-                    <a href="#">Home</a>
-                    <a href="#">Offers</a>
-                    <a href="#">Contact</a>
-                    <a href="#">FAQs</a>
-                </nav>
+      <!-- Desktop Nav -->
+      <nav class="nav-glass">
+        <a href="#">Home</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQs</a>
+      </nav>
 
-                <!-- Button -->
-                <a href="#" class="connect-btn">
-                    <img src="./assets/images/Frame.png" alt="message" height="20" class="me-2">
-                    Let’s Connect
-                </a>
+      <!-- Desktop Button -->
+      <a href="#" class="connect-btn d-flex align-items-center">
+        <img src="./assets/images/Frame.png" alt="message" height="20" class="me-2">
+        Let’s Connect
+      </a>
 
-            </div>
-        </div>
-    </header>
+      <!-- Burger -->
+      <div class="burger" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#">Offers</a>
+    <a href="#">Contact</a>
+    <a href="#">FAQs</a>
+    <a href="#" class="connect-btn">Let’s Connect</a>
+  </div>
+</header>
+
 
     <section class="hero-section">
         <div class="container">
@@ -302,7 +319,7 @@
 
     <!-- Top Row -->
     <div class="row align-items-center footer-top">
-        <div class="col-md-6 d-flex align-items-center gap-2">
+        <div class="col-sm-4 col-md-6 d-flex align-items-center justify-content-center justify-content-sm-start pb-3 pb-sm-0 gap-2">
             <img
             src="./assets/images/Group 1437254512.png"
             alt="CBE Docs"
@@ -311,7 +328,7 @@
             <!-- <span class="footer-brand">CBE Docs</span> -->
       </div>
 
-      <div class="col-md-6">
+      <div class="col-sm-8 col-md-6">
         <ul class="footer-nav">
           <li><a href="#">Home</a></li>
           <li><a href="#">Offer</a></li>
@@ -345,6 +362,14 @@
 </footer>
 
 
+<script>
+  const burgerBtn = document.getElementById("burgerBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  burgerBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+</script>
 
 
 
