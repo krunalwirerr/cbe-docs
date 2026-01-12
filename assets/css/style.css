@@ -1140,3 +1140,115 @@ body {
   padding-bottom: 30px;
 }
 }
+
+
+
+
+
+
+
+
+/* ================= Channels & Services ================= */
+
+.channels-services {
+  background-image: url("../images/Rectangle 700.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Center Title */
+.center-title {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 600;
+  color: #222;
+}
+
+/* Service Card */
+.service-card {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 40px 30px;
+  min-height: 220px;
+}
+
+.service-card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= BACKGROUND BORDERS ================= */
+
+/* Top Left */
+.service-1 {
+  background-image: url("../images/c1.png");
+  padding-right: 80px;
+  
+}
+
+/* Top Right */
+.service-2 {
+  background-image: url("../images/c2.png");
+  padding-left: 90px;
+  
+}
+
+/* Bottom Left */
+.service-3 {
+  background-image: url("../images/c3.png");
+  padding-right: 90px;
+  
+}
+
+/* Bottom Right */
+.service-4 {
+  background-image: url("../images/c4.png");
+  padding-left: 90px;
+  
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 30px;
+    max-width: 370px;
+    justify-self: center;
+    min-height: auto;
+  }
+
+  .left-card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .right-card{
+        display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .service-2, .service-4{
+    text-align: right;
+    padding-right: 40px;
+  }
+
+    .service-2 p, .service-4 p{
+    justify-self: end;
+  }
+
+    .service-card p{
+    max-width: 230px;
+  }
+
+  .center-title {
+    margin-bottom: 30px;
+  }
+}

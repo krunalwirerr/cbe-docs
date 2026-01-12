@@ -1,389 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Section</title>
     <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header id="mainHeader">
-  <div class="container-fluid px-5">
-    <div class="d-flex align-items-center justify-content-between">
+      <div class="container-fluid px-5">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <div class="d-flex align-items-center gap-2">
+            <!-- <img class="d-block d-md-none" src="./assets/images/Group 1437254512.png" alt="logo" height="36"> -->
+            <img src="./assets/images/logo.png" alt="logo" height="36" />
+          </div>
 
-      <!-- Logo -->
-      <div class="d-flex align-items-center gap-2">
-        <!-- <img class="d-block d-md-none" src="./assets/images/Group 1437254512.png" alt="logo" height="36"> -->
-        <img src="./assets/images/logo.png" alt="logo" height="36">
+          <!-- Desktop Nav -->
+          <nav class="nav-glass">
+            <a href="#">Home</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQs</a>
+          </nav>
+
+          <!-- Desktop Button -->
+          <a href="#" class="connect-btn d-flex align-items-center">
+            <img
+              src="./assets/images/Frame.png"
+              alt="message"
+              height="20"
+              class="me-2"
+            />
+            Let’s Connect
+          </a>
+
+          <!-- Burger -->
+          <div class="burger" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
 
-      <!-- Desktop Nav -->
-      <nav class="nav-glass">
+      <!-- Mobile Menu -->
+      <div class="mobile-nav" id="mobileMenu">
         <a href="#">Home</a>
         <a href="#">Offers</a>
         <a href="#">Contact</a>
         <a href="#">FAQs</a>
-      </nav>
-
-      <!-- Desktop Button -->
-      <a href="#" class="connect-btn d-flex align-items-center">
-        <img src="./assets/images/Frame.png" alt="message" height="20" class="me-2">
-        Let’s Connect
-      </a>
-
-      <!-- Burger -->
-      <div class="burger" id="burgerBtn">
-        <span></span>
-        <span></span>
-        <span></span>
+        <a href="#" class="connect-btn">Let’s Connect</a>
       </div>
-
-    </div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-nav" id="mobileMenu">
-    <a href="#">Home</a>
-    <a href="#">Offers</a>
-    <a href="#">Contact</a>
-    <a href="#">FAQs</a>
-    <a href="#" class="connect-btn">Let’s Connect</a>
-  </div>
-</header>
-
+    </header>
 
     <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-white">
+            <span class="hero-badge">
+              TRUSTED DIGITAL DOCUMENTATION PLATFORM
+            </span>
 
-                <div class="col-lg-6 text-white">
-                    <span class="hero-badge">
-                        TRUSTED DIGITAL DOCUMENTATION PLATFORM
-                    </span>
+            <h1 class="hero-title mt-4">
+              <span>
+                Your Trusted,<br />
+                Secure Gateway<br />
+              </span>
+              to open a CBE account
+            </h1>
 
-                    <h1 class="hero-title mt-4">
-                        <span>
-                            Your Trusted,<br>
-                            Secure Gateway<br>
-                        </span>
-                        to open a CBE account
-                    </h1>
+            <p class="hero-subtext mt-3">
+              In partnership with unite.et & National Bank<br />
+              Of Ethiopia
+            </p>
 
-                    <p class="hero-subtext mt-3">
-                        In partnership with unite.et & National Bank<br>
-                        Of Ethiopia
-                    </p>
-
-                    <div class="store-buttons mt-4 d-flex gap-3">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                            height="45">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                            height="45">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                    <img src="./assets/images/hero-illustration.png" class="img-fluid hero-img">
-                </div>
-
+            <div class="store-buttons mt-4 d-flex gap-3">
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                height="45"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                height="45"
+              />
             </div>
+          </div>
+
+          <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            <img
+              src="./assets/images/hero-illustration.png"
+              class="img-fluid hero-img"
+            />
+          </div>
         </div>
+      </div>
     </section>
-     <section class="banking-section">
-        <div class="container">
-            <div class="banking-card">
-                <div class="banking-wrapper">
-                    
-                    <!-- LEFT SIDE: Image + Conventional Banking -->
-                    <div class="banking-side left">
-                        <img src="./assets/images/man.png" alt="User" class="person-img">
-                        
-                        <div class="banking-item">
-                            <div class="icon-circle">
-                                <img src="./assets/images/image 2.png" alt="Conventional Banking">
-                            </div>
-                            <h6>Conventional<br>Banking Services<br>with flexible options</h6>
-                            <a href="#" class="get-started-btn">
-                                Get Started 
-                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+    <section class="banking-section">
+      <div class="container">
+        <div class="banking-card">
+          <div class="banking-wrapper">
+            <!-- LEFT SIDE: Image + Conventional Banking -->
+            <div class="banking-side left">
+              <img
+                src="./assets/images/man.png"
+                alt="User"
+                class="person-img"
+              />
 
-                    <!-- DIVIDER -->
-                    <div class="vertical-divider"></div>
-
-                    <!-- RIGHT SIDE: CBENoor Shariah + Image -->
-                    <div class="banking-side right">
-                        <img src="./assets/images/woman.png" alt="User" class="person-img">
-                        <!-- Replace above with:  -->
-                        
-                        <div class="banking-item">
-                            <div class="icon-circle">
-                                <img src="./assets/images/image 5.png" alt="Shariah Banking">
-                            </div>
-                            <h6>CBENoor Shariah<br>Compliant, interest-<br>Free Banking</h6>
-                            <a href="#" class="get-started-btn">
-                                Get Started 
-                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
+              <div class="banking-item">
+                <div class="icon-circle">
+                  <img
+                    src="./assets/images/image 2.png"
+                    alt="Conventional Banking"
+                  />
                 </div>
+                <h6>
+                  Conventional<br />Banking Services<br />with flexible options
+                </h6>
+                <a href="#" class="get-started-btn">
+                  Get Started
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M3 13L13 3M13 3H5M13 3V11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
+
+            <!-- DIVIDER -->
+            <div class="vertical-divider"></div>
+
+            <!-- RIGHT SIDE: CBENoor Shariah + Image -->
+            <div class="banking-side right">
+              <img
+                src="./assets/images/woman.png"
+                alt="User"
+                class="person-img"
+              />
+              <!-- Replace above with:  -->
+
+              <div class="banking-item">
+                <div class="icon-circle">
+                  <img
+                    src="./assets/images/image 5.png"
+                    alt="Shariah Banking"
+                  />
+                </div>
+                <h6>
+                  CBENoor Shariah<br />Compliant, interest-<br />Free Banking
+                </h6>
+                <a href="#" class="get-started-btn">
+                  Get Started
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M3 13L13 3M13 3H5M13 3V11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="channels-services py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-2 d-block d-md-none text-center my-4 my-md-0">
+            <h2 class="center-title">Channels<br />& Services</h2>
+          </div>
+          <!-- Left Column -->
+          <div class="col-md-5 left-card">
+            <div class="service-card service-1">
+              <h5>Digital Remittance service</h5>
+              <p>
+                Digital Remittance services such as Ethio Direct, FastPay, and
+                Cashgo are available to all Ethiopians and those of Ethiopian
+                origin with access to digital platforms.
+              </p>
+            </div>
+
+            <div class="service-card service-3 mt-4">
+              <h5>Cash Exchange service</h5>
+              <p>
+                The Cash Exchange service is available to individuals
+                instituting exchanging amounts below USD 3,000 (or equivalent).
+              </p>
+            </div>
+          </div>
+
+          <!-- Center Title -->
+          <div class="col-md-2 d-none d-md-block text-center my-4 my-md-0">
+            <h2 class="center-title">Channels<br />& Services</h2>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-5 mt-4 mt-md-0 right-card">
+            <div class="service-card service-2">
+              <h5>Major Remittance Service</h5>
+              <p>
+                Major Remittance services like Western Union, MoneyGram,
+                Transfast, World Remit, and Ria are accessible.
+              </p>
+            </div>
+
+            <div class="service-card service-4 mt-4">
+              <h5>Digital Banking</h5>
+              <p>
+                Digital banking services, card banking, mobile banking, CBE
+                Birr, mobile money, and MS-L are available.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="app-showcase">
-        <div class="app-container">
-            <!-- Left Content -->
-            <div class="content">
-                <span class="badge">OUR APP SCREENSHOTS</span>
-                <h2>Your Digital Banking<br>Experience</h2>
-                <p>
-                    A seamless digital banking experience that lets you transfer money,
-                    manage accounts, and make secure payments anytime, anywhere.
-                </p>
-                <a href="#" class="cta-btn">
-                    Get Started
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Right Side - Phone Screenshots -->
-            <div class="phones-wrapper">
-                <div class="phones">
-                    <!-- Replace these divs with your actual images -->
-                    <img src="/assets/images/iPhone-16-Light.png" class="phone phone-1" alt="App Screen 1">
-
-                    <img src="/assets/images/iPhone-16-Light-(1).png" class="phone phone-2" alt="App Screen 2">
-
-                    <img src="/assets/images/iPhone-16-Light-(2).png" class="phone phone-3" alt="App Screen 3">
-
-                    <img src="/assets/images/iPhone-16-Light-(3).png" class="phone phone-4" alt="App Screen 4">
-
-
-                    <!-- To use your actual images, replace the divs above with: -->
-                </div>
-            </div>
+      <div class="app-container">
+        <!-- Left Content -->
+        <div class="content">
+          <span class="badge">OUR APP SCREENSHOTS</span>
+          <h2>Your Digital Banking<br />Experience</h2>
+          <p>
+            A seamless digital banking experience that lets you transfer money,
+            manage accounts, and make secure payments anytime, anywhere.
+          </p>
+          <a href="#" class="cta-btn">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3 13L13 3M13 3H5M13 3V11"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
         </div>
+
+        <!-- Right Side - Phone Screenshots -->
+        <div class="phones-wrapper">
+          <div class="phones">
+            <!-- Replace these divs with your actual images -->
+            <img
+              src="/assets/images/iPhone-16-Light.png"
+              class="phone phone-1"
+              alt="App Screen 1"
+            />
+
+            <img
+              src="/assets/images/iPhone-16-Light-(1).png"
+              class="phone phone-2"
+              alt="App Screen 2"
+            />
+
+            <img
+              src="/assets/images/iPhone-16-Light-(2).png"
+              class="phone phone-3"
+              alt="App Screen 3"
+            />
+
+            <img
+              src="/assets/images/iPhone-16-Light-(3).png"
+              class="phone phone-4"
+              alt="App Screen 4"
+            />
+
+            <!-- To use your actual images, replace the divs above with: -->
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="signup-process">
-  <div class="process-inner">
+      <div class="process-inner">
+        <h2 class="section-title">Easy <strong>Sign up Process</strong></h2>
 
-    <h2 class="section-title">
-      Easy <strong>Sign up Process</strong>
-    </h2>
+        <div class="process-steps">
+          <div class="step step-1">
+            <span class="step-number">1</span>
+            <p>Sign up &<br />Register</p>
+          </div>
 
-    <div class="process-steps">
+          <div class="step step-2">
+            <span class="step-number">2</span>
+            <p>
+              Choose your bank<br />
+              and verify your<br />
+              account details
+            </p>
+          </div>
 
-      <div class="step step-1">
-        <span class="step-number">1</span>
-        <p>Sign up &<br>Register</p>
-      </div>
-
-      <div class="step step-2">
-        <span class="step-number">2</span>
-        <p>
-          Choose your bank<br>
-          and verify your<br>
-          account details
-        </p>
-      </div>
-
-      <div class="step step-3">
-        <span class="step-number">3</span>
-        <p>
-          Get your foreign<br>
-          account
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
- <section class="president-message-section">
-        <div class="">
-            <div class="message-wrapper">
-                
-                <!-- Left Image - Overlapping -->
-                <div class="president-img-wrapper">
-                    <img src="/assets/images/Mask group.png" alt="President" class="president-img">
-                    <!-- Replace with:  -->
-                </div>
-
-                <!-- Right Content Card -->
-                <div class="message-card">
-                    <h3 class="section-title">
-                        Message <span>From President</span>
-                    </h3>
-
-                    <p class="intro-text">
-                        Dear Esteemed Members of the Ethiopian Diaspora,
-                    </p>
-
-                    <p>
-                        It is with great pleasure that we reach out to you, our brothers and sisters across the globe.
-                        Our shared purpose is clear: to build a strong financial bridge that connects you with Ethiopia,
-                        fostering prosperity and expanding access to world-class financial services.
-                    </p>
-
-                    <p>
-                        We recognize the dedication and sacrifices you make abroad, and we know that Ethiopia remains close
-                        to your heart. That is why we are committed to supporting you in achieving your financial aspirations—
-                        whether that means purchasing a home, investing in a business, providing for your family, or managing your...
-                    </p>
-
-                    <a href="#" class="read-more">Read More</a>
-
-                    <div class="author">
-                        <strong>Abie Sano</strong>
-                        <span>President, Commercial Bank of Ethiopia</span>
-                    </div>
-                </div>
-
-            </div>
+          <div class="step step-3">
+            <span class="step-number">3</span>
+            <p>
+              Get your foreign<br />
+              account
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
+    <section class="president-message-section">
+      <div class="">
+        <div class="message-wrapper">
+          <!-- Left Image - Overlapping -->
+          <div class="president-img-wrapper">
+            <img
+              src="/assets/images/Mask group.png"
+              alt="President"
+              class="president-img"
+            />
+            <!-- Replace with:  -->
+          </div>
+
+          <!-- Right Content Card -->
+          <div class="message-card">
+            <h3 class="section-title">Message <span>From President</span></h3>
+
+            <p class="intro-text">
+              Dear Esteemed Members of the Ethiopian Diaspora,
+            </p>
+
+            <p>
+              It is with great pleasure that we reach out to you, our brothers
+              and sisters across the globe. Our shared purpose is clear: to
+              build a strong financial bridge that connects you with Ethiopia,
+              fostering prosperity and expanding access to world-class financial
+              services.
+            </p>
+
+            <p>
+              We recognize the dedication and sacrifices you make abroad, and we
+              know that Ethiopia remains close to your heart. That is why we are
+              committed to supporting you in achieving your financial
+              aspirations— whether that means purchasing a home, investing in a
+              business, providing for your family, or managing your...
+            </p>
+
+            <a href="#" class="read-more">Read More</a>
+
+            <div class="author">
+              <strong>Abie Sano</strong>
+              <span>President, Commercial Bank of Ethiopia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="app-download-section py-5">
-  <div class="container">
-    <div class="app-download-wrapper">
-      <div class="row align-items-center">
+      <div class="container">
+        <div class="app-download-wrapper">
+          <div class="row align-items-center">
+            <!-- Left Content -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="app-title">
+                The App is now<br />
+                available for your<br />
+                smart phone
+              </h2>
 
-        <!-- Left Content -->
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <h2 class="app-title">
-            The App is now<br />
-            available for your<br />
-            smart phone
-          </h2>
+              <div class="store-buttons mt-4 d-flex flex-wrap gap-3">
+                <a href="#">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Google Play"
+                    class="store-btn"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="App Store"
+                    class="store-btn"
+                  />
+                </a>
+              </div>
+            </div>
 
-          <div class="store-buttons mt-4 d-flex flex-wrap gap-3">
-            <a href="#">
+            <!-- Right Image -->
+            <div class="col-lg-6 text-center">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Google Play"
-                class="store-btn"
+                src="/assets/images/image 6.png"
+                alt="Mobile App"
+                class="img-fluid app-image"
               />
-            </a>
-            <a href="#">
-              <img
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="App Store"
-                class="store-btn"
-              />
-            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <!-- Top Row -->
+        <div class="row align-items-center footer-top">
+          <div
+            class="col-sm-4 col-md-6 d-flex align-items-center justify-content-center justify-content-sm-start pb-3 pb-sm-0 gap-2"
+          >
+            <img
+              src="./assets/images/Group 1437254512.png"
+              alt="CBE Docs"
+              class="footer-logo"
+            />
+            <!-- <span class="footer-brand">CBE Docs</span> -->
+          </div>
+
+          <div class="col-sm-8 col-md-6">
+            <ul class="footer-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Offer</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
           </div>
         </div>
 
-        <!-- Right Image -->
-        <div class="col-lg-6 text-center">
-          <img
-            src="/assets/images/image 6.png"
-            alt="Mobile App"
-            class="img-fluid app-image"
-          />
-        </div>
+        <!-- <hr /> -->
 
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- Bottom Row -->
+        <div class="row align-items-center footer-bottom">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="copyright">
+              Copyright © CBE Doc 2026. All rights reserved
+            </p>
+          </div>
 
-
-
-<footer class="site-footer">
-  <div class="container">
-
-    <!-- Top Row -->
-    <div class="row align-items-center footer-top">
-        <div class="col-sm-4 col-md-6 d-flex align-items-center justify-content-center justify-content-sm-start pb-3 pb-sm-0 gap-2">
-            <img
-            src="./assets/images/Group 1437254512.png"
-            alt="CBE Docs"
-            class="footer-logo"
-            />
-            <!-- <span class="footer-brand">CBE Docs</span> -->
-      </div>
-
-      <div class="col-sm-8 col-md-6">
-        <ul class="footer-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Offer</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- <hr /> -->
-
-    <!-- Bottom Row -->
-    <div class="row align-items-center footer-bottom">
-      <div class="col-md-6 text-center text-md-start">
-        <p class="copyright">
-          Copyright © CBE Doc 2026. All rights reserved
-        </p>
-      </div>
-
-      <div class="col-md-6 text-center text-md-end">
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-  </div>
-</footer>
+    <script>
+      const burgerBtn = document.getElementById("burgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
 
+      burgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
 
-<script>
-  const burgerBtn = document.getElementById("burgerBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
+    <script>
+      const header = document.getElementById("mainHeader");
 
-  burgerBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-  });
-</script>
-
-<script>
-  const header = document.getElementById("mainHeader");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
-</script>
-
-
-</body>
-
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
 </html>
