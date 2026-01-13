@@ -976,8 +976,8 @@ body {
   .president-img,
   .president-img-placeholder {
     width: 100%;
-    max-width: 300px;
-    height: 360px;
+    /* max-width: 300px; */
+    height: auto;
   }
 
   .message-card {
